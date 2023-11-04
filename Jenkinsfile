@@ -19,10 +19,6 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
 
-    tools {
-        maven 'maven-3.9.4' 
-    }
-
     stages {     
         stage('Paralle Demo') {
             parallel {   
