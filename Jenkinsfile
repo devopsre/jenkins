@@ -43,11 +43,11 @@ pipeline {
                 }
                 stage('Stage Two') {
                     environment {
-                        aws = "Dev"
+                        BATCH = "b55"
                     }
                     steps {
                         sh "echo Stage Two Demo"
-                        sh "echo deploy   is ${Dev}"
+                        sh "echo Trainig  Batch is ${BATCH}"
                         sh "sleep 30"
                     }
                 }
@@ -65,4 +65,3 @@ pipeline {
             clearWs()
         }
     }
-}
