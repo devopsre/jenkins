@@ -6,8 +6,10 @@ pipeline {
     stages {
         stage('stage one') {
             steps {
+                sh '''
                 echo 'Hello World'
                 echo environment URL is ${ENV_URL}
+                '''
             }
         }
         stage('Example Deploy') {
