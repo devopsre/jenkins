@@ -4,9 +4,10 @@ pipeline {
         ENV_URL= "pipeline.google.com"
     }
     stages {
-        stage('Example Build') {
+        stage('stage one') {
             steps {
                 echo 'Hello World'
+                echo environment URL is ${ENV_URL}
             }
         }
         stage('Example Deploy') {
